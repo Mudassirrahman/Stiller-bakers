@@ -21,7 +21,13 @@ const Cart = ({ cart, setCart }) => {
   });
 
   return (<>
-        <article>
+  <header>
+        <div>
+        <Link to="/"  className="logo"><i className="fas fa-utensils"></i>Stiller's</Link>
+        <img className="logo-img" src="images/images-removebg-preview1.png" alt="" />
+      </div>
+        </header>
+        <article className="cart--main">
       {cart.map((item) => (
         <div className="cart_box" key={item.id}>
           <div className="cart_img">

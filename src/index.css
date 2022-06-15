@@ -211,7 +211,7 @@ header .navbar a{
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
-  margin: 6% 1% 0;
+  margin: 5% 1% 0;
   align-items: center;
   flex-direction: row;
   background: rgb(246, 243, 236);
@@ -297,14 +297,14 @@ height: 250px;
 
 /*  css for  dishes part start*/
 
-section.dishes{
+/* section.dishes{
   margin-top: 6%;
   
-}
+} */
 
 img.dish-img{
   width: 200px;
-  height: 150px;
+  height: 165px;
   transition: .2s ease-in-out;
   border: 1px solid #eee;
   border-radius: .5rem;
@@ -332,6 +332,8 @@ img:hover{
 
 h3.dishes-text{
   color: #27ae60;
+  padding-top: 1rem;
+  font-size: 2rem;
 }
 .dishes-one{
   display: flex;
@@ -341,7 +343,7 @@ h3.dishes-text{
 
 
 .dishes .box-container .box{
-  padding: 2.5rem;
+  padding: 1.5rem;
   margin-bottom: 1rem;
   background: #fff;
   border-radius: .5rem;
@@ -351,8 +353,12 @@ h3.dishes-text{
   overflow: hidden;
   text-align: center;
   width: 252px;
-  height: 290px;
+  height: 311px;
   
+}
+.dishes .box-container .box i{
+  color: #27ae60;
+  font-size: 1.3rem;
 }
 
 span.price{
@@ -425,6 +431,7 @@ span.price{
   .dishes .box-container .box .fa-eye{
     left: 4.5rem;
   }
+
 
 }
 
@@ -861,8 +868,8 @@ padding: 0 2rem 0 .5rem;
 
 /* login css */
 /* shoping cart */
-.shoping-cart{
-  margin: 7%;
+.cart--main{
+  margin: 9rem auto;
 }
 
 article {

@@ -15,7 +15,7 @@ const Dishes = ({item , handleClick})=>{
                  <a href="#" className="fas fa-heart"></a>
                  <a href="#" className="fas fa-eye"></a>
                  <img className="dish-img" src={img}   alt="dish-img" />
-                 <h3> {title}</h3>
+                 <h3 className="dishes-text"> {title}</h3>
                  <Stars />
                  <span className="price">{price} pkr</span>
                  <a  className="butn menu-dish-btn" onClick={() => handleClick(item)}  > add to cart</a>
