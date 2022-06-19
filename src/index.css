@@ -414,7 +414,7 @@ span.price{
 }
 
 
-@media(max-width:500px){
+/* @media(max-width:500px){
   .dishes .box-container .box{
     width: 65%;
     height: 290px;
@@ -452,7 +452,7 @@ span.price{
 
 @media(max-width:383px){
   .dishes .box-container .box{
-    width: 65%;
+    width: 75%;
     height: 259px;
   }
 
@@ -463,14 +463,14 @@ span.price{
 
 @media(max-width:320px){
   .dishes .box-container .box{
-    width: 65%;
+    width: 75%;
     height: 288px;
   }
 
   img.dish-img{
     width: 170px;
   }
-}
+} */
 
 /*  css for  dishes part end*/
 
@@ -879,8 +879,8 @@ article {
 }
 
 .cart_box img {
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: 165px;
 }
 .cart_img {
   display: flex;

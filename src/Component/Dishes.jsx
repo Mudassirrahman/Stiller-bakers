@@ -6,7 +6,7 @@ import "../index.css"
 
 const Dishes = ({item , handleClick})=>{
 
- const {id,title,price,img} = item;
+ const {title,price,img} = item;
     return(
         <>
         <section className="dishes" >

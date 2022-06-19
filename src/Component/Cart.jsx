@@ -5,10 +5,14 @@ const margin ={
   margin:"7% auto",
 }
 
-const Cart = ({ cart, setCart }) => {
+const Cart = ({ cart, setCart,handleChange }) => {
   const [price, setPrice] = useState(0);
 
- 
+  const handleRemove = (id) => {
+    const arr = cart.filter((item) => item.id !== id);
+    setCart(arr);
+    handlePrice();
+  };
 
   const handlePrice = () => {
     let ans = 0;
@@ -35,13 +39,13 @@ const Cart = ({ cart, setCart }) => {
             <p>{item.title}</p>
           </div>
           <div>
-           
+            <button onClick={() => handleChange(item, 1)}>+</button>
             <button>{item.amount}</button>
-           
+            <button onClick={() => handleChange(item, -1)}>-</button>
           </div>
           <div>
             <span>{item.price}</span>
-            
+            <button onClick={() => handleRemove(item.id)}>Remove</button>
           </div>
         </div>
       ))}
@@ -49,31 +53,10 @@ const Cart = ({ cart, setCart }) => {
         <span>Total Price of your Cart</span>
         <span>Rs - {price}</span>
       </div>
+      {/* <Link><button className="butn">buy now</button></Link> */}
     </article>
     </>
   );
 };
 
 export default Cart;
-
-// import React from "react";
-// import {Link} from "react-router-dom";
-// import "../index.css";
-
-// export default function Cart () {
-
-//     return(
-//         <>
-//          <header>
-//         <div>
-//         <Link to="/"  className="logo"><i className="fas fa-utensils"></i>Stiller's</Link>
-//         <img className="logo-img" src="images/images-removebg-preview1.png" alt="" />
-//       </div>
-//         </header>
-//       <section className="shoping-cart">
-// <h1>cart items</h1>
-//       </section>
-          
-//         </>
-//     );
-// }

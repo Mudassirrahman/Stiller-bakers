@@ -2,7 +2,7 @@ const list = [
     {
       id: 1,
       title: "product1",
-      price: 89,
+      price: 189,
       img: "./Images/images771.jpeg",
       amount: 1
 
@@ -10,7 +10,7 @@ const list = [
     {
       id: 2,
       title: "product2",
-      price: 98,
+      price: 198,
       img: "./Images/images11.jpeg",
       amount: 1,
     },
@@ -24,7 +24,7 @@ const list = [
     {
       id: 4,
       title: "product4",
-      price: 57,
+      price: 157,
       img: "./Images/images33.jpeg",
       amount: 1,
     },
@@ -60,14 +60,14 @@ const list = [
     {
       id: 9,
       title: "product9 ",
-      price: 80,
+      price: 180,
       img: "./Images/images88.jpeg",
       amount: 1,
     },
     {
       id: 10,
       title: "product10",
-      price: 86,
+      price: 199,
       img: "./Images/images771.jpeg",
       amount: 1,
     },
