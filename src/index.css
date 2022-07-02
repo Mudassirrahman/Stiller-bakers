@@ -301,6 +301,9 @@ height: 250px;
   margin-top: 6%;
   
 } */
+/* .dishes{
+  margin: 0 8rem;
+} */
 
 img.dish-img{
   width: 200px;
@@ -477,14 +480,17 @@ span.price{
 
 /*  css for about*/
 
+.about{
+  background: rgb(213, 241, 248);
+}
 
 .about .row{
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  margin: 0 8rem;
   align-items: center;
-  background: rgb(213, 241, 248);
-  margin: 0 1rem;
+  ;
 }
 
 
@@ -651,6 +657,9 @@ section i.fa-heart{
   align-items: center;
   font-size: 2.5rem;
 }
+.review{
+  margin: 0 8rem;
+}
 
 
 .review .slide {
@@ -662,6 +671,7 @@ section i.fa-heart{
 }
 
 .review--section{
+  margin: 0 8rem;
   padding: 2rem;
   box-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
   border: .1rem solid rgba(0,0,0,.2);
@@ -830,15 +840,22 @@ padding: 0 2rem 0 .5rem;
 /*   foooteeer sectioon   */
 
 .footer{
+  
   background: rgb(219, 211, 211);
 }
 
+
+
 .footer .box-container{
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap:1.5rem;
   margin-left:  2rem;
   margin-top: 3rem;
+}
+.box{
+  margin: 0 8rem;
 }
 
 .footer .box-container .box h3{
