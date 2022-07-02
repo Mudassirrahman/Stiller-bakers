@@ -5,6 +5,9 @@ const margin ={
   margin:"7% auto",
 }
 
+function buynow (){
+alert("Thank you for choosing us")
+}
 const Cart = ({ cart, setCart,handleChange }) => {
   const [price, setPrice] = useState(0);
 
@@ -51,8 +54,9 @@ const Cart = ({ cart, setCart,handleChange }) => {
       ))}
       <div className="total">
         <span>Total Price of your Cart</span>
-        <span>Rs - {price}</span>
+        <span>Rs = {price}</span>
       </div>
+      <a href="" className="butn" onClick={buynow}>buy now</a>
       {/* <Link><button className="butn">buy now</button></Link> */}
     </article>
     </>

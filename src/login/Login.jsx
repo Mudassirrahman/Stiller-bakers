@@ -67,7 +67,7 @@ function login(){
      <form id="login" className="input-group" action="/">
         <input type="text" className="input-field" id="userName" placeholder="User Id" required />
         <input type="text" className="input-field" id="userPwd" placeholder="Enter Password" required />
-        <input type="checkbox" className="check-box" /><span className="log-span">Remember Password</span>
+        <input type="checkbox" className="check-boxx" /><span className="log-spanss">Remember Password</span>
         <button type="submit" className="submit-butn" style= {bRadios} onClick={logFunction}>Log in</button>
         
     </form>
@@ -76,10 +76,14 @@ function login(){
             <input type="email" className="input-field" placeholder="Email Id" required />
             <input type="text" className="input-field" placeholder="Enter Password" required />
             <input type="text" className="input-field" placeholder="Confrim Password" required />
-            <input type="checkbox" className="check-box" /><span className="log-span register-form">I agree to the terms & conditions</span>
+            <input type="checkbox" className="check-boxx" /><span className="log-spanss register-form">I agree to the terms & conditions</span>
             <button type="submit" className="submit-butn" style= {bRadios}>Register</button>
     </form>
 </div>
+</div>
+
+<div className="bt">
+
 </div>
         </>
     );

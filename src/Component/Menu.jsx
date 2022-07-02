@@ -12,14 +12,14 @@ export default function Menu(props){
      <div className="box">
        <div className="image">
          <img src={props.imgsrc} alt="dish img"/>
-         <a href="#" className="fas fa-heart"></a>
+         <a  className="fas fa-heart"></a>
        </div>
        <div className="menu-content">
          <Stars/>
          <h3>tasty & healthy fresh food</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptates!</p>
-         <a href="#" className="butn">add to cart</a>
-         <span className="price">9.99 pkr</span>
+         <a  className="butn">click for moor</a>
+         <span className="price"></span>
        </div>
      </div>
      </div>
