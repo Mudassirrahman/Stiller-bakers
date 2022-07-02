@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Stiller-bakers/static/css/main.ef54a9ac.css",
+    "main.js": "/Stiller-bakers/static/js/main.2ab3539c.js",
+    "index.html": "/Stiller-bakers/index.html",
+    "main.ef54a9ac.css.map": "/Stiller-bakers/static/css/main.ef54a9ac.css.map",
+    "main.2ab3539c.js.map": "/Stiller-bakers/static/js/main.2ab3539c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef54a9ac.css",
+    "static/js/main.2ab3539c.js"
+  ]
+}
