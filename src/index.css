@@ -115,6 +115,7 @@
   header .icons #menu-bars{
   display: inline-block;
 }
+
 header .navbar{
   position: absolute;
   top:100%; left: 0; right: 0;
@@ -150,6 +151,11 @@ header .navbar a{
   html{
     font-size: 50%;
   }
+}
+@media(max-width:425px){
+ #heart{
+  display: none;
+ }
 }
 
 #search-form{

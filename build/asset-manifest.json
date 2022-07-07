@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Stiller-bakers/static/css/main.3ecb42f3.css",
-    "main.js": "/Stiller-bakers/static/js/main.2ab3539c.js",
-    "index.html": "/Stiller-bakers/index.html",
-    "main.3ecb42f3.css.map": "/Stiller-bakers/static/css/main.3ecb42f3.css.map",
-    "main.2ab3539c.js.map": "/Stiller-bakers/static/js/main.2ab3539c.js.map"
+    "main.css": "/static/css/main.3ecb42f3.css",
+    "main.js": "/static/js/main.53b146dc.js",
+    "index.html": "/index.html",
+    "main.3ecb42f3.css.map": "/static/css/main.3ecb42f3.css.map",
+    "main.53b146dc.js.map": "/static/js/main.53b146dc.js.map"
   },
   "entrypoints": [
     "static/css/main.3ecb42f3.css",
-    "static/js/main.2ab3539c.js"
+    "static/js/main.53b146dc.js"
   ]
 }
