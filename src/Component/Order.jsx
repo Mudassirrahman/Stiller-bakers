@@ -23,29 +23,29 @@ export default function Order() {
           <div className="inputbox">
             <div className="input">
               <span>your name</span>
-              <input type="text" name="name" placeholder="enter your name" value={contactInfo.name} onChange={handleChange} />
+              <input type="text" name="name" placeholder="enter your name" value={contactInfo.name} onChange={handleChange} required />
             </div>
             <div className="input">
               <span>your number</span>
-              <input type="number" name="num" placeholder="your number" value={contactInfo.num} onChange={handleChange} />
+              <input type="number" name="num" placeholder="your number" value={contactInfo.num} onChange={handleChange} required/>
             </div>
           </div>
           <div className="inputbox">
             <div className="input">
               <span>your order</span>
-              <input type="text" name="order" placeholder="enter food name" value={contactInfo.order} onChange={handleChange} />
+              <input type="text" name="order" placeholder="enter food name" value={contactInfo.order} onChange={handleChange} required/>
             </div>
             <div className="input">
               <span>want to add sam moor ?</span>
-              <input type="text" placeholder="extra with food" name="extra" value={contactInfo.extra} onChange={handleChange} />
+              <input type="text" placeholder="extra with food" name="extra" value={contactInfo.extra} onChange={handleChange} required />
             </div>
             <div className="input">
               <span>how much</span>
-              <input type="text" placeholder="how many orders" name="cnt" value={contactInfo.cnt} onChange={handleChange} />
+              <input type="text" placeholder="how many orders" name="cnt" value={contactInfo.cnt} onChange={handleChange} required/>
             </div>
             <div className="input">
               <span>date and time</span>
-              <input type="datetime-local" name="date" value={contactInfo.date} onChange={handleChange} />
+              <input type="datetime-local" name="date" value={contactInfo.date} onChange={handleChange} required />
             </div>
             <div className="input">
               <span>your adress</span>
@@ -56,7 +56,7 @@ export default function Order() {
               <textarea type="text" placeholder="enter your massage" cols="30" rows="10" name="msg" value={contactInfo.msg} onChange={handleChange}></textarea>
             </div>
           </div>
-          <input type="checkbox" name="tnc" value={contactInfo.tnc} onChange={handleChange} /> <span className="trms">Accpt terms and conditions</span>
+          <input type="checkbox" name="tnc" value={contactInfo.tnc} onChange={handleChange} required /> <span className="trms">Accpt terms and conditions</span>
           <button className="butn" onClick={submitInfo}>order now</button>
         </form>
       </section>

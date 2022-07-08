@@ -10,7 +10,7 @@ export default function About(){
     <img className="about-img" src={process.env.PUBLIC_URL + "/Images/gallery1.png"} alt="about img" />
     </div>
     <div className="about-content">
-        <h3> best food in countery</h3>
+        <h3> best food in country</h3>
         <p> The founder of the stiller's system was a chef family  who introduced a new kind of dessert treats , fast food and, in the process, developed the foundation of the franchising industry. The history of the steller system is a story of a unique product that created an industry.</p>
         <p>Award Winning Cakes, Cupcakes, Cake Pops, Cookies, and More!<br/>
            The Stiller's is an award winning bakery that specializes in custom desserts for any occasion including cakes, cupcakes, cake pops, cookies, macarons and more.
@@ -31,7 +31,7 @@ export default function About(){
   
     <div className="icons">
       <i className="fas fa-headset"></i>
-      <span>24/7 avalbel</span>
+      <span>24/7 available</span>
     </div>
   </div>
   <a href="#" className="butn">learn more</a>

@@ -18,7 +18,7 @@ export default function Menu(props){
          <Stars/>
          <h3>tasty & healthy fresh food</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptates!</p>
-         <a  className="butn">click for moor</a>
+         <a  className="butn">click for more</a>
          <span className="price"></span>
        </div>
      </div>

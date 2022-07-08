@@ -14,7 +14,8 @@ export default function Revies(props){
               <Stars />
           </div>
         </div>
-        <p> lorem ispm dollar sit amit aalo kachalo miyan sab theek thaak gajar b theek moli b fit bhindi nakhreli.</p>
+        <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       
       </div>
