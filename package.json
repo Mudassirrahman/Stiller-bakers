@@ -13,9 +13,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.7",
-    "web-vitals": "^2.1.2",
-    "homepage": "https://mudassirrahman.github.io/Stiller-bakers"
-  },
+    "web-vitals": "^2.1.2"
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
