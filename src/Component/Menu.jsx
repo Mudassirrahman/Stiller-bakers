@@ -1,13 +1,13 @@
 import React from "react";
 import Stars from "./Stars";
-import Menuimg from "../ImgComponents/MenuImg";
+import { menuimg } from "../Data";
 
 export default function Menu() {
   return (
     <>
       <section className="container menu" id="menu">
         <div className="row d-flex justify-content-between">
-        {Menuimg.map((props, index) => (
+        {menuimg.map((props, index) => (
           <div key={index} className="menu-box-container col-lg-4 col-md-6 col-sm-6 col-12 ">
             <div className="box">
               <div className="image">
