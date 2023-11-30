@@ -1,91 +1,87 @@
-import React  from "react";
-import "./login.css"
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./login.css";
 
+const Login = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [isLogin, setIsLogin] = useState(true);
 
-function logFunction(){
-    var username = document.getElementById("userName").value;
-    var Password = document.getElementById("userPwd").value;
-if (username==="mudassir" && Password==="user"){
+  const handleLogin = (event) => {
+    event.preventDefault(); // Prevent the form from submitting
 
-    alert(`"welcome" ${username}`)
-   ;
+    // Validate credentials
+    if (username === "mudassir" && password === "user") {
+      alert(`Welcome ${username}`);
+    } else {
+      alert("Login failed");
+    }
+  };
 
-}
-else{
-    alert("login fail");
-}
+  const toggleForm = (isLoginForm) => {
+    setIsLogin(isLoginForm);
+  };
 
-
-}
-var bRadios = 
-{ borderRadius: "30px",
-width: "85%",
-padding:" 10px 30px",
-cursor:" pointer",
-display:" block",
-margin:" auto",
-background:"#27ae60 ",
-border:" 0",
-outline:" none",
-}
-
-export default function Login () {
-
-var x = document.getElementById("login")
-var y = document.getElementById("register")
-var z = document.getElementById("butn")
-function register(){
-    x.style.left="-400px";
-    y.style.left="50px";
-    z.style.left="110px";
-}
-function login(){
-    x.style.left="50px";
-    y.style.left="450px";
-    z.style.left="0px";
-}
-
-
-    return(
-
-        <>
-        <header>
+  return (
+    <>
+      <header>
         <div>
-        <Link to="/"  className="logo"><i className="fas fa-utensils"></i>Stiller's</Link>
-        <img className="logo-img" src="Images/images-removebg-preview1.png" alt="" />
-      </div>
-        </header>
-        <div className="login-page">
-    <div className="login-form">
-    <div className="login-metrial">
-        <div id="butn">
+          <Link to="/" className="logo">
+            <i className="fas fa-utensils"></i>Stiller's
+          </Link>
+          <img className="logo-img" src="Images/images-removebg-preview1.png" alt="" />
         </div>
-        <button type="button" className="toggle-butn" onClick={login}>Log in</button>
-        <button type="button" className="toggle-butn" onClick={register}>Register</button>
-    </div>
-     <form id="login" className="input-group" action="/">
-        <input type="text" className="input-field" id="userName" placeholder="User Id" required />
-        <input type="text" className="input-field" id="userPwd" placeholder="Enter Password" required />
-        <input type="checkbox" className="check-boxx" /><span className="log-spanss">Remember Password</span>
-        <button type="submit" className="submit-butn" style= {bRadios} onClick={logFunction}>Log in</button>
-        
-    </form>
-    <form id="register" className="input-group">
-            <input type="text" className="input-field" placeholder="User Id" required />
-            <input type="email" className="input-field" placeholder="Email Id" required />
-            <input type="text" className="input-field" placeholder="Enter Password" required />
-            <input type="text" className="input-field" placeholder="Confrim Password" required />
-            <input type="checkbox" className="check-boxx" /><span className="log-spanss register-form">I agree to the terms & conditions</span>
-            <button type="submit" className="submit-butn" style= {bRadios}>Register</button>
-    </form>
-</div>
-</div>
+      </header>
+      <div className="login-page">
+        <div className="login-form">
+          <div className="login-metrial">
+            <div id="butn"></div>
+            <button
+              type="button"
+              className={`toggle-butn ${isLogin ? "active" : ""}`}
+              onClick={() => toggleForm(true)}
+            >
+              Log in
+            </button>
+            <button
+              type="button"
+              className={`toggle-butn ${!isLogin ? "active" : ""}`}
+              onClick={() => toggleForm(false)}
+            >
+              Register
+            </button>
+          </div>
+          <form
+            className={`input-group ${isLogin ? "login" : "register"}`}
+            onSubmit={handleLogin}
+          >
+            <input
+              type="text"
+              className="input-field"
+              placeholder="User Id"
+              required
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <input
+              type="password"
+              className="input-field"
+              placeholder="Enter Password"
+              required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <input type="checkbox" className="check-boxx" />
+            <span className="log-spanss">Remember Password</span>
+            <button type="submit" className="submit-butn">
+              {isLogin ? "Log in" : "Register"}
+            </button>
+          </form>
+        </div>
+      </div>
+      <div className="bt"></div>
+    </>
+  );
+};
 
-<div className="bt">
-
-</div>
-        </>
-    );
-
-}
+export default Login;
