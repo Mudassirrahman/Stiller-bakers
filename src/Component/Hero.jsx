@@ -12,9 +12,19 @@ export default function Hero() {
       >
         <div className="row d-flex justify-content-between">
           <div className="col-lg-4 col-md-4 col-12 d-flex flex-column justify-content-center order-lg-0 order-md-0 order-1 mt-4">
-            <h1>Today's Special</h1>
-            <h3>cooked with love</h3>
-            <p className="w-50">
+            <h1
+              style={{
+                fontSize: "calc(2.375rem + 1.5vw)",
+              }}
+            >
+              Today's Special
+            </h1>
+            <h3  style={{
+                fontSize: "calc(2rem + 1vw)",
+              }}>cooked with love</h3>
+            <p className=""  style={{
+                fontSize: "calc(.7rem + 1vw)",
+              }}>
               We source our quality ingredients from local suppliers and the
               world's most trusted brands. Food Safety Keeping our food and
               guests safe
