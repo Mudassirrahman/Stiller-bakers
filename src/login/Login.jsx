@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function logFunction(){
     var username = document.getElementById("userName").value;
     var Password = document.getElementById("userPwd").value;
-if (username=="mudassir" && Password=="user"){
+if (username==="mudassir" && Password==="user"){
 
     alert(`"welcome" ${username}`)
    ;
@@ -53,7 +53,7 @@ function login(){
         <header>
         <div>
         <Link to="/"  className="logo"><i className="fas fa-utensils"></i>Stiller's</Link>
-        <img className="logo-img" src="images/images-removebg-preview1.png" alt="" />
+        <img className="logo-img" src="Images/images-removebg-preview1.png" alt="" />
       </div>
         </header>
         <div className="login-page">

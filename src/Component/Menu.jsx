@@ -7,7 +7,7 @@ export default function Menu(props){
 
   
     return(<>
-        <section className="menu" id="menu">
+        <section className="container menu" id="menu">
    <div className="box-container">
      <div className="box">
        <div className="image">

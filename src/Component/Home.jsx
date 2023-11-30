@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import Dishimg from "../ImgComponents/DishImg";
 import Menuimg from "../ImgComponents/MenuImg";
 import About from "./About";
-import Dishes from "./Dishes";
 import DisheshHeading from "./DishesHeading";
 import Footer from "./Footer";
 import Menu from "./Menu";
@@ -66,11 +65,14 @@ export default function Home({ item ,handleClick}) {
       <DishesOne handleClick={handleClick} />
 
       <About />
-      <MenuHeading />
+      <div className="container"><MenuHeading /></div>
+      
       <div style={dishes}>
         {Menuimg.map(menupart)};
       </div>
+      <div className="container">
       <Review_heading />
+      </div>
       <Revew />
       <Review imgsrc="../Images/EHAAB.jpeg" name="EHAB" />
       <Review imgsrc="../Images/EIFA.jpeg" name="EIFA" />

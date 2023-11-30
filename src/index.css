@@ -212,7 +212,7 @@ header .navbar a{
  .home.home-bg{
    background-color: rgb(246, 243, 236);;
  }
-
+/* 
 .container{
   display: flex;
   justify-content: space-between;
@@ -223,8 +223,8 @@ header .navbar a{
   background: rgb(246, 243, 236);
   border-radius: .5rem;
  
-}
-.col-2{width: 14.66%;}
+} */
+/* .col-2{width: 14.66%;}
 .col-3{
 width: 27%;
 display: flex;
@@ -232,7 +232,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
-}
+} */
 
 .col-3 h1{
   margin-top: 7%;

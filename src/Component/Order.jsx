@@ -16,7 +16,7 @@ export default function Order() {
 
   return (
     <>
-      <section className="order" id="order">
+      <section className="container order" id="order">
         <h3 className="sub-heading">order now</h3>
         <h1 className="heading"> free and fast</h1>
         <form onSubmit={handleSubmit}>

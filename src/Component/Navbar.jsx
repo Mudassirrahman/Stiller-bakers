@@ -45,10 +45,10 @@ export default function Navbar() {
 
   return (
 
-    <header>
+    <header className="container mt-0">
       <div>
         <a className="logo" href="#"><i className="fas fa-utensils"></i>Stiller's</a>
-        <img className="logo-img" src="images/images-removebg-preview1.png" alt="" />
+        <img className="logo-img" src="Images/images-removebg-preview1.png" alt="" />
       </div>
 
       <div>
@@ -66,7 +66,6 @@ export default function Navbar() {
 
       <div className="icons">
       <i className="fas fa-search" id="search-icon" onClick={searchToggle}></i>
-        <a href="#" className=" fas fa-heart" id="heart"></a>
         {/* <a href="#" className=" fas fa-shopping-cart"></a> */}
         <Link to="/cart" className="fas fa-shopping-cart" ><span></span></Link>
         <Link to="/login" className="fas fa-user" id="login-icon" ></Link>
