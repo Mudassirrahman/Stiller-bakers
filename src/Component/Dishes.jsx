@@ -14,9 +14,9 @@ const Dishes = ({ item, handleClick }) => {
           {list.map((item) => (
             <section className="col-lg-3 col-md-4 col-sm-6 col-12  box-container mt-3">
               <img className="dish-img" src={item.img} alt="dish-img" />
-              <h3 className="dishes-text"> {item.title}</h3>
+              <h3 className="dishes-text mt-3"> {item.title}</h3>
               <Stars />
-              <span className="price">{item.price} pkr</span>
+              <p className="price">{item.price} pkr</p>
               <a
                 className="butn menu-dish-btn"
                 onClick={() => handleClick(item)}

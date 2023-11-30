@@ -5,13 +5,12 @@ import Menu from "./Menu";
 import MenuHeading from "./MenuHeading";
 import Order from "./Order";
 import Search from "./Search";
-import Revew from "./Revew";
-import Review from "./Review";
 import Hero from "./Hero";
 import Dishes from "./Dishes";
 import Navbar from "./navbar/Navbar";
+import ReviewSection from "./FeedBack";
 
-export default function Home(val, { item, handleClick }) {
+export default function Home({ handleClick }) {
   return (
     <>
       <Hero />
@@ -21,8 +20,7 @@ export default function Home(val, { item, handleClick }) {
       <About />
       <MenuHeading />
       <Menu />
-      <Revew />
-      <Review />
+      <ReviewSection />
       <Order />
       <Footer />
     </>

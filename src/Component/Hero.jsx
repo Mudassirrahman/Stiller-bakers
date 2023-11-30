@@ -11,10 +11,10 @@ export default function Hero() {
         }}
       >
         <div className="row d-flex justify-content-between">
-          <div className="col-lg-4 col-md-4 col-12 d-flex flex-column justify-content-center">
+          <div className="col-lg-4 col-md-4 col-12 d-flex flex-column justify-content-center order-lg-0 order-md-0 order-1 mt-4">
             <h1>Today's Special</h1>
             <h3>cooked with love</h3>
-            <p>
+            <p className="w-50">
               We source our quality ingredients from local suppliers and the
               world's most trusted brands. Food Safety Keeping our food and
               guests safe
@@ -24,7 +24,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="col-lg-8 col-md-8 col-12">
+          <div className="col-lg-8 col-md-8 col-12 order-lg-1 order-md-1 order-0">
             <div
               id="carouselExampleControls"
               className="carousel slide"

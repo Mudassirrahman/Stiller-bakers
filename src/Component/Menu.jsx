@@ -8,11 +8,10 @@ export default function Menu() {
       <section className="container menu" id="menu">
         <div className="row d-flex justify-content-between">
         {Menuimg.map((props) => (
-          <div className="menu-box-container col-lg-4 col-md-3 col-sm-6 col-12 ">
+          <div className="menu-box-container col-lg-4 col-md-6 col-sm-6 col-12 ">
             <div className="box">
               <div className="image">
                 <img src={props.imgurl} alt="dish img" />
-                <a className="fas fa-heart"></a>
               </div>
               <div className="menu-content">
                 <Stars />
@@ -21,7 +20,7 @@ export default function Menu() {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Nihil, voluptates!
                 </p>
-                <a className="butn">click for more</a>
+                <a className="butn" href="">click for more</a>
                 <span className="price"></span>
               </div>
             </div>
