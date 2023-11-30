@@ -1,20 +1,26 @@
 import React, { useState } from "react";
 
 const Revew = () => {
-  const [review, newreview] = useState("");
-  const [reviewcontent, setreview] = useState([]);
+  const [review, setReview] = useState("");
+  const [reviewContent, setReviewContent] = useState([]);
 
   const userreview = (event) => {
-    newreview(event.target.value);
+    setReview(event.target.value);
   };
   const listofreview = () => {
-    setreview((oldreview) => {
+    setReviewContent((oldreview) => {
       return [...oldreview, review];
     });
   };
   return (
     <>
-      <div className="review--section">
+      <div className="container review--section">
+      <div>
+      <h3 className="sub-heading"> coustmer's Feed Back</h3>
+        <h1 className="heading">
+          loved by some of our favourite people on earth{" "}
+        </h1>
+      </div>
         <h1 className="review-heading">your review</h1>
         <br />
         <input
@@ -26,16 +32,15 @@ const Revew = () => {
         />
         <br />
         <button className="butn review--btn" onClick={listofreview}>
-          {" "}
           post review
         </button>
-      <ul>
-      <li>
-          {reviewcontent.map((reviews) => {
-            return <li className="coustmer-rew">{reviews}</li>;
-          })}
-        </li>
-      </ul>
+        <ul className="list-unstyled">
+          <li>
+            {reviewContent.map((reviews) => {
+              return <li className="coustmer-rew">{reviews}</li>;
+            })}
+          </li>
+        </ul>
       </div>
     </>
   );

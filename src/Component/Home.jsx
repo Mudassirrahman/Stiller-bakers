@@ -1,95 +1,30 @@
-import React, { useState } from "react"
-import Dishimg from "../ImgComponents/DishImg";
-import Menuimg from "../ImgComponents/MenuImg";
+import React from "react";
 import About from "./About";
-import DisheshHeading from "./DishesHeading";
 import Footer from "./Footer";
 import Menu from "./Menu";
 import MenuHeading from "./MenuHeading";
 import Order from "./Order";
-import Review_heading from "./Review_heading";
 import Search from "./Search";
 import Revew from "./Revew";
 import Review from "./Review";
-import Navbar from "./Navbar";
 import Hero from "./Hero";
-import DishesOne from "./DishesOne";
+import Dishes from "./Dishes";
+import Navbar from "./navbar/Navbar";
 
-
-
-
-const dishes = {
-  display: 'flex',
-  justifyContent: 'space-around',
-  flexWrap: 'wrap'
-}
-
-// function dishpart(val) {
-//   return (
-//     <Dishes key={val.id} imgsrc={val.imgurl} />
-//   );
-
-// }
-function menupart(val) {
-  return (
-    <Menu key={val.id} imgsrc={val.imgurl} />);
-}
-
-
-export default function Home({ item ,handleClick}) {
-  // const [cart, setCart] = useState([]);
-
-  // const handleClick = (item) => {
-
-  //   cart.push(item);
-  //   console.log(cart);
-  //   // const handleClick = (item) => {
-  //   //   setCart([...cart, item]);
-  //   // }
-  // };
-  // const handleChange = (item, d) => {
-  //   const ind = cart.indexOf(item);
-  //   const arr = cart;
-  //   arr[ind].amount += d;
-
-  //   if (arr[ind].amount === 0) arr[ind].amount = 1;
-  //   setCart([...arr]);
-  // };
+export default function Home(val, { item, handleClick }) {
   return (
     <>
       <Hero />
       <Navbar />
       <Search />
-      <DisheshHeading />
-
-      <DishesOne handleClick={handleClick} />
-
+      <Dishes handleClick={handleClick} />
       <About />
-      <div className="container"><MenuHeading /></div>
-      
-      <div style={dishes}>
-        {Menuimg.map(menupart)};
-      </div>
-      <div className="container">
-      <Review_heading />
-      </div>
+      <MenuHeading />
+      <Menu />
       <Revew />
-      <Review imgsrc="../Images/EHAAB.jpeg" name="EHAB" />
-      <Review imgsrc="../Images/EIFA.jpeg" name="EIFA" />
-      <Review imgsrc="../Images/DAWOOD.jpeg" name="DAWOOD" />
+      <Review />
       <Order />
       <Footer />
     </>
-
-
-
-
-
-  )
-
-
-
+  );
 }
-
-
-
