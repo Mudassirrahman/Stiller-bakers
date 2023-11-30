@@ -767,7 +767,7 @@ padding: 0 2rem 0 .5rem;
 
 
 
-.footer .menu-box-container{
+.footer .box-container{
   
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -777,26 +777,26 @@ padding: 0 2rem 0 .5rem;
 }
 
 
-.footer .menu-box-container .box h3{
+.footer .box-container .box h3{
   padding:.5rem 0;
   font-size: 2.5rem;
   color:#192a56;
 }
 
-.footer .menu-box-container .box a{
+.footer .box-container .box a{
   display: block;
   padding:.5rem 0;
   font-size: 1.5rem;
   text-decoration: none;
   color:black;
 }
-.footer .menu-box-container .box a span.loc{
+.footer .box-container .box a span.loc{
   font-family:'Nunito', sans-serif;
   line-height: 2rem;
   padding-left: 1rem;
 }
 
-.footer .menu-box-container .box a:hover{
+.footer .box-container .box a:hover{
   color:#27ae60;
   text-decoration: underline;
 }

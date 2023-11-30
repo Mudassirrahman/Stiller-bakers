@@ -12,51 +12,51 @@ export default function Footer() {
                   className="fas fa-map-marker-alt"
                   href="https://www.google.com/maps/place/Shah+Faisal+Masjid/@33.7295198,73.0349649,17z/data=!3m1!4b1!4m5!3m4!1s0x38dfbefce01e6917:0x3e66e0de3e2598c0!8m2!3d33.7295198!4d73.0371536"
                 >
-                  <span className="loc"> islamabad</span>
+                  <span className="loc ps-4 fs-4"> islamabad</span>
                 </a>
                 <a className="fas fa-map-marker-alt" href="#">
-                  <span className="loc">karachi</span>
+                  <span className="loc ps-4 fs-4">karachi</span>
                 </a>
                 <a className="fas fa-map-marker-alt" href="#">
-                  <span className="loc">lahore</span>
+                  <span className="loc ps-4 fs-4">lahore</span>
                 </a>
                 <a className="fas fa-map-marker-alt" href="#">
-                  <span className="loc">peshawer</span>
+                  <span className="loc ps-4 fs-4">peshawer</span>
                 </a>
                 <a className="fas fa-map-marker-alt" href="#">
-                  <span className="loc">queta</span>
+                  <span className="loc ps-4 fs-4">queta</span>
                 </a>
               </div>
             </div>
             <div className="col-3 mt-5 mb-5">
               <h3 className="mb-5"> qick links</h3>
               <div className="d-flex flex-column gap-5">
-                <a href="#home">home</a>
-                <a href="#dishes">dishes</a>
-                <a href="#about">about</a>
-                <a href="#menu">menu</a>
-                <a href="#review">review</a>
-                <a href="#order">order</a>
+                <a className="fs-4" href="#home">home</a>
+                <a className="fs-4" href="#dishes">dishes</a>
+                <a className="fs-4" href="#about">about</a>
+                <a className="fs-4" href="#menu">menu</a>
+                <a className="fs-4" href="#review">review</a>
+                <a className="fs-4" href="#order">order</a>
               </div>
             </div>
 
             <div className="col-3 mt-5 mb-5">
               <h3 className="mb-5">contect us</h3>
               <div className="d-flex flex-column gap-5">
-                <a href="#">+923339004604</a>
-                <a href="#">+923006784608</a>
-                <a href="#">mudassirrehman1989@gmail.com</a>
-                <a href="#">abudllahmuhammad10@yahoo.com</a>
-                <a href="#">rahim yar khan punjab pakistan</a>
+                <a className="fs-4"  href="#">+923339004604</a>
+                <a className="fs-4"  href="#">+923006784608</a>
+                <a className="fs-4"  href="#">mudassirrehman1989@gmail.com</a>
+                <a className="fs-4"  href="#">abudllahmuhammad10@yahoo.com</a>
+                <a className="fs-4"  href="#">rahim yar khan punjab pakistan</a>
               </div>
             </div>
             <div className="col-3 mt-5 mb-5">
               <h3 className="mb-5">follow us</h3>
               <div className="d-flex flex-column gap-5">
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">instagram</a>
-                <a href="#">linkedink</a>
+                <a className="fs-4"  href="#">facebook</a>
+                <a className="fs-4"  href="#">twitter</a>
+                <a className="fs-4"  href="#">instagram</a>
+                <a className="fs-4"  href="#">linkedink</a>
               </div>
             </div>
           </div>
