@@ -5,7 +5,7 @@ export default function Footer() {
       <section className="footer">
         <div className="container">
           <div className="row d-flex">
-            <div className="col-3 mt-5 mb-5">
+            <div className="col-lg-3 col-md-6 col-6 mt-5 mb-5">
               <h3 className="mb-5"> location</h3>
               <div className="d-flex flex-column gap-5">
                 <a
@@ -28,7 +28,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="col-3 mt-5 mb-5">
+            <div className="col-lg-3 col-md-6 col-6 mt-5 mb-5">
               <h3 className="mb-5"> qick links</h3>
               <div className="d-flex flex-column gap-5">
                 <a className="fs-4" href="#home">home</a>
@@ -40,7 +40,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="col-3 mt-5 mb-5">
+            <div className="col-lg-3 col-md-6 col-6 mt-5 mb-5">
               <h3 className="mb-5">contect us</h3>
               <div className="d-flex flex-column gap-5">
                 <a className="fs-4"  href="#">+923339004604</a>
@@ -50,7 +50,7 @@ export default function Footer() {
                 <a className="fs-4"  href="#">rahim yar khan punjab pakistan</a>
               </div>
             </div>
-            <div className="col-3 mt-5 mb-5">
+            <div className="col-lg-3 col-md-6 col-6 mt-5 mb-5">
               <h3 className="mb-5">follow us</h3>
               <div className="d-flex flex-column gap-5">
                 <a className="fs-4"  href="#">facebook</a>
