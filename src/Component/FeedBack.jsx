@@ -11,7 +11,7 @@ const ReviewData = [
 
 const Reviews = ({ reviewContent, setReviewContent }) => {
   return (
-    <section className="container p-0 review" id="review">
+    <section className="container p-0 review" id="">
       <div className=" swiper-container review-slider">
         <div className="swiper-wrapper">
           {reviewContent.map((review, index) => (
@@ -53,7 +53,7 @@ const ReviewSection = () => {
   };
 
   return (
-    <div className="container review--section">
+    <div className="container review--section" id="review">
       <h3 className="sub-heading">Coustmer's Feed Back</h3>
       <h1 className="heading">Loved by some of our favorite people on earth</h1>
 

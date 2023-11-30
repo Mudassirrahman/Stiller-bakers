@@ -7,8 +7,8 @@ export default function Menu() {
     <>
       <section className="container menu" id="menu">
         <div className="row d-flex justify-content-between">
-        {Menuimg.map((props) => (
-          <div className="menu-box-container col-lg-4 col-md-6 col-sm-6 col-12 ">
+        {Menuimg.map((props, index) => (
+          <div key={index} className="menu-box-container col-lg-4 col-md-6 col-sm-6 col-12 ">
             <div className="box">
               <div className="image">
                 <img src={props.imgurl} alt="dish img" />

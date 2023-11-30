@@ -25,13 +25,13 @@ const Cart = ({ cart, setCart,handleChange }) => {
 
   useEffect(() => {
     handlePrice();
-  });
+  }, [cart]);
 
   return (<>
   <header>
         <div>
         <Link to="/"  className="logo"><i className="fas fa-utensils"></i>Stiller's</Link>
-        <img className="logo-img" src="images/images-removebg-preview1.png" alt="" />
+        <img className="logo-img" src="Images/images-removebg-preview1.png" alt="" />
       </div>
         </header>
         <article className="cart--main">

@@ -28,7 +28,7 @@ export default function App() {
     
       <BrowserRouter>
         <Routes>
-          <Route path={ "/"}  exact element={<Home handleClick={handleClick} />} />
+          <Route path={ "/"}  exact element={<Home cart={cart} handleClick={handleClick} />} />
           <Route path="/cart" element={ <Cart  cart={cart} setCart={setCart}  handleChange={handleChange} />} />
           <Route path="/login" element={<Login />} />
         </Routes>

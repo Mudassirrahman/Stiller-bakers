@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({cart}) {
   
 
   const menuTogle = () => {
@@ -53,7 +53,7 @@ export default function Navbar() {
 
       <div className="icons">
       <i className="fas fa-search" id="search-icon" onClick={searchToggle}></i>
-        <Link to="/cart" className="fas fa-shopping-cart" ><span></span></Link>
+        <Link to="/cart" className="fas fa-shopping-cart" ><span className="cart-count">{cart.length}</span></Link>
         <Link to="/login" className="fas fa-user" id="login-icon" ></Link>
         <i className="fas fa-bars" id="menu-bars" onClick={menuTogle}></i>
         

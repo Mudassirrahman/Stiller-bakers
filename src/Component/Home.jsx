@@ -10,11 +10,11 @@ import Dishes from "./Dishes";
 import Navbar from "./navbar/Navbar";
 import ReviewSection from "./FeedBack";
 
-export default function Home({ handleClick }) {
+export default function Home({cart, handleClick }) {
   return (
     <>
       <Hero />
-      <Navbar />
+      <Navbar cart={cart} />
       <Search />
       <Dishes handleClick={handleClick} />
       <About />
