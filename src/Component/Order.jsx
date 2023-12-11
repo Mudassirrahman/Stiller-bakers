@@ -36,11 +36,11 @@ export default function Order() {
               <input type="text" name="order" placeholder="enter food name" value={contactInfo.order} onChange={handleChange} required/>
             </div>
             <div className="input col-lg-6 col-md-6 col-sm-6 col-12">
-              <span>want to add sam moor ?</span>
+              <span>Want to add something else?</span>
               <input type="text" placeholder="extra with food" name="extra" value={contactInfo.extra} onChange={handleChange} required />
             </div>
             <div className="input col-lg-6 col-md-6 col-sm-6 col-12">
-              <span>how much</span>
+              <span>Quantity</span>
               <input type="text" placeholder="how many orders" name="cnt" value={contactInfo.cnt} onChange={handleChange} required/>
             </div>
             <div className="input col-lg-6 col-md-6 col-sm-6 col-12">
@@ -56,8 +56,10 @@ export default function Order() {
               <textarea type="text" placeholder="enter your massage" cols="30" rows="10" name="msg" value={contactInfo.msg} onChange={handleChange}></textarea>
             </div>
           </div>
-          <input type="checkbox" name="tnc" value={contactInfo.tnc} onChange={handleChange} required /> <span className="trms">Accpt terms and conditions</span>
-          <button className="butn" onClick={submitInfo}>order now</button>
+          <input type="checkbox" name="tnc" value={contactInfo.tnc} onChange={(e) =>
+              setContactInfo({ ...contactInfo
+              , tnc: e.target.checked })} required /> <span className="trms">Accpt terms and conditions</span>
+          <button type="submit" className="butn">order now</button>
         </form>
       </section>
     </>
