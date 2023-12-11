@@ -690,9 +690,9 @@ section i.fa-heart{
   justify-content: space-between;
 }
 
-.order form .inputbox .input{
-  width: 49%;
-}
+/*.order form .inputbox .input{
+  width: 49%; 
+} */
 
 @media(max-wideh:950px){
 
