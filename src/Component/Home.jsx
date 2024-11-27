@@ -22,7 +22,7 @@ export default function Home({cart, handleClick }) {
       <Menu />
       <ReviewSection />
       <Order />
-{/*       <Footer /> */}
+      <Footer />
     </>
   );
 }
