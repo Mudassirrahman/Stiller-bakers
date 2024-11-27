@@ -24,7 +24,7 @@ export default function Footer() {
                   <span className="loc ps-4 fs-4">peshawer</span>
                 </a>
                 <a className="fas fa-map-marker-alt" href="#">
-                  <span className="loc ps-4 fs-4">queta</span>
+                  <span className="loc ps-4 fs-4">Rahim Yar Khan</span>
                 </a>
               </div>
             </div>
